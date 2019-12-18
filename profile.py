@@ -7,7 +7,7 @@ request = pc.makeRequestRSpec()
 
 tourDescription = "A compute node with Docker installed on Ubuntu 18.04"
 tour = IG.Tour()
-tour.Description(IG.Tour.TEXT.tourDescription)
+tour.Description(IG.Tour.TEXT,tourDescription)
 request.addTour(tour)
 
 node = request.RawPC("head")
